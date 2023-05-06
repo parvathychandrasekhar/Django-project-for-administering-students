@@ -6,6 +6,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Name</th>
           <th>Date of Birth</th>
           <th>Physics Marks</th>
@@ -18,6 +19,7 @@
       <tbody>
         {% for student in students %}
           <tr>
+            <td>{{ student.id }}</td>
             <td>{{ student.name }}</td>
             <td>{{ student.date_of_birth }}</td>
             <td>{{ student.physics_marks }}</td>
